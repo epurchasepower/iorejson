@@ -1,5 +1,7 @@
 # Rejson
 
+ePurchasepower hack of the iorejson package.  'New Rejson()' now returns the 'new Redis()', with a 'json' property that allows access to the new json-specific set/get/etc., and the json stuff now respects the keyPrefix, if there is one.  Allows us to use just one connection for both json and non-json access.
+
 [![npm version](https://badge.fury.io/js/iorejson.svg)](https://badge.fury.io/js/iorejson)
 
 The node client for the rejson module of redis. Under the hood it uses the `ioredis` client, and the APIs are conformed to the conventions of `ioredis`.
